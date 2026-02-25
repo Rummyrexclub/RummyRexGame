@@ -1,9 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Rummy</title>
+  <title>Rummy Table</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0b5e2a;
+      font-family: Arial;
+      color: white;
+      text-align: center;
+    }
+
+    .table {
+      margin-top: 40px;
+      width: 90%;
+      height: 500px;
+      background: #146b34;
+      border-radius: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      box-shadow: 0 0 40px black;
+    }
+
+    .center-cards {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      width: 70px;
+      height: 100px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    .player {
+      position: absolute;
+      background: #222;
+      padding: 8px 12px;
+      border-radius: 20px;
+    }
+
+    .p1 { bottom: 10px; left: 45%; }
+    .p2 { top: 10px; left: 45%; }
+    .p3 { left: 5%; top: 45%; }
+    .p4 { right: 5%; top: 45%; }
+  </style>
 </head>
 <body>
-<h1>Rummy Game Starting Soon</h1>
+
+<h2>6 Player Rummy Table (Demo)</h2>
+
+<div class="table">
+
+  <div class="center-cards">
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+
+  <div class="player p1">You</div>
+  <div class="player p2">Player 2</div>
+  <div class="player p3">Player 3</div>
+  <div class="player p4">Player 4</div>
+
+</div>
+
 </body>
 </html>
